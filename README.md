@@ -4,8 +4,6 @@
 
 [![Просмотры README](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
 
-<sub>Приблизительные просмотры всех языковых версий с момента подключения счётчика. Повторные загрузки могут учитываться.</sub>
-
 Argonus — Python-проект для анализа акций Московской биржи, генерации вотчлистов,
 исследования внутридневных стратегий и исполнения заявок через T-Invest API.
 

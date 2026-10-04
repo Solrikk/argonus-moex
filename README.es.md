@@ -4,8 +4,6 @@
 
 [![Vistas del README](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
 
-<sub>Vistas aproximadas de todos los idiomas desde la instalación del contador. Las recargas pueden contabilizarse.</sub>
-
 Argonus es un proyecto en Python para analizar acciones de la Bolsa de Moscú
 (MOEX), generar listas de seguimiento, investigar estrategias intradía y
 ejecutar órdenes a través de la API de T-Invest.

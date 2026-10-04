@@ -4,8 +4,6 @@
 
 [![README views](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
 
-<sub>Approximate views of all language versions since setup. Repeat loads may count.</sub>
-
 Argonus is a Python project for analyzing stocks on the Moscow Exchange (MOEX),
 generating watchlists, researching intraday strategies, and executing orders
 through the T-Invest API.

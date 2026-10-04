@@ -4,8 +4,6 @@
 
 [![README 浏览次数](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
 
-<sub>统计添加计数器后所有语言版本的近似浏览次数。重复加载可能计入统计。</sub>
-
 Argonus 是一个 Python 项目，用于分析莫斯科交易所（MOEX）的股票、生成股票观察列表、
 研究日内交易策略，并通过 T-Invest API 执行交易订单。
 

@@ -4,8 +4,6 @@
 
 [![README の表示回数](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
 
-<sub>カウンター追加後の全言語版の概算表示回数です。再読み込みも計上される場合があります。</sub>
-
 Argonus は、モスクワ証券取引所（MOEX）の株式分析、ウォッチリストの生成、
 デイトレード戦略の研究、T-Invest API を通じた注文執行を行う Python プロジェクトです。
 
