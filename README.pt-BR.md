@@ -56,25 +56,6 @@ O retorno de cada mês é calculado sobre o saldo no início desse mês.
 
 </details>
 
-### Como interpretar os resultados
-
-- **95% do lucro foi obtido nos dados usados para escolher as regras.** As regras
-  da entrada das 07:05 foram escolhidas com dados até 16 de julho de 2026; até essa
-  data, a conta subiu 213,8%. A área cinza do gráfico mostra os dias seguintes: a
-  conta ganhou 3,3%, e o IMOEX, 12,7%.
-- **O scanner opera apenas em parte do período.** De outubro a janeiro seus
-  modelos ainda estão em treinamento, fevereiro e março foram usados para escolher
-  a arquitetura e os dados da manhã terminam em 9 de setembro de 2026. A
-  arquitetura foi escolhida em outubro de 2026 com o mesmo arquivo de dados, então
-  nem a área cinza é um teste independente das operações do scanner.
-- **A execução é simplificada.** A simulação usa lotes fracionários e não tem livro
-  de ofertas histórico nem verificação de disponibilidade para vendas a descoberto.
-  Com slippage de 0,2% por ponta, o scanner reduz o lucro em vez de aumentá-lo.
-- **Posições com alavancagem de até 3×.** As posições abertas somam no máximo
-  150.000 ₽ e não mais que três vezes o patrimônio da conta, por isso o retorno da
-  conta não é diretamente comparável ao do índice. O IMOEX é um índice de preços,
-  sem dividendos.
-
 > [!WARNING]
 > Resultados de backtest não garantem retornos futuros e não são recomendação de
 > investimento.

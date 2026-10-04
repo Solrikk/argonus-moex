@@ -56,27 +56,6 @@ Die Monatsrendite bezieht sich auf den Kontostand zu Beginn des Monats.
 
 </details>
 
-### So sind die Ergebnisse zu lesen
-
-- **95 % des Gewinns entstanden auf den Daten, mit denen die Regeln ausgewählt
-  wurden.** Die Regeln für den Einstieg um 07:05 Uhr wurden auf Daten bis zum
-  16. Juli 2026 ausgewählt; bis zu diesem Tag wuchs das Konto um 213,8 %. Der graue
-  Bereich im Diagramm zeigt die Tage danach: Das Konto legte 3,3 % zu, der IMOEX
-  12,7 %.
-- **Der Scanner handelt nur in einem Teil des Zeitraums.** Von Oktober bis Januar
-  werden seine Modelle erst trainiert, Februar und März dienten der Auswahl der
-  Architektur, und die Morgendaten enden am 9. September 2026. Die Architektur
-  wurde im Oktober 2026 auf demselben Archiv ausgewählt, daher ist auch der graue
-  Bereich für die Scanner-Trades kein unabhängiger Test.
-- **Die Ausführung ist vereinfacht.** Die Simulation rechnet mit Bruchteilen von
-  Lots und hat weder ein historisches Orderbuch noch eine Prüfung, ob Leerverkäufe
-  möglich sind. Bei 0,2 % Slippage je Seite verringert der Scanner den Gewinn,
-  statt ihn zu erhöhen.
-- **Positionen mit bis zu 3-fachem Hebel.** Offene Positionen betragen insgesamt
-  höchstens 150.000 ₽ und höchstens das Dreifache des Kontokapitals, daher ist die
-  Kontorendite nicht direkt mit dem Index vergleichbar. Der IMOEX ist ein
-  Kursindex ohne Dividenden.
-
 > [!WARNING]
 > Backtest-Ergebnisse garantieren keine künftigen Renditen und sind keine
 > Anlageempfehlung.

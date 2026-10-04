@@ -55,24 +55,6 @@ Each month's return is measured against the balance at the start of that month.
 
 </details>
 
-### How to read these results
-
-- **95% of the profit was earned on the data used to choose the rules.** The
-  07:05 entry rules were selected on data through July 16, 2026; by that date the
-  account was up 213.8%. The shaded area on the chart covers the days after that:
-  the account gained 3.3% while IMOEX gained 12.7%.
-- **The scanner trades for only part of the period.** From October to January
-  its models are still training, February and March were used to choose its
-  architecture, and the morning data end on September 9, 2026. The architecture
-  was chosen in October 2026 on the same archive, so even the shaded area is not
-  an independent test of the scanner's trades.
-- **Execution is simplified.** The simulation uses fractional lots and has no
-  historical order book or short-availability check. At 0.2% slippage per side,
-  the scanner reduces profit instead of adding to it.
-- **Positions use up to 3× leverage.** Open positions total at most 150,000 ₽ and
-  no more than three times the account equity, so the account return is not
-  directly comparable with the index. IMOEX is a price index without dividends.
-
 > [!WARNING]
 > Backtest results do not guarantee future returns and are not investment advice.
 

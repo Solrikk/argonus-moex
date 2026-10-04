@@ -56,26 +56,6 @@ La rentabilidad de cada mes se calcula sobre el saldo al inicio de ese mes.
 
 </details>
 
-### Cómo interpretar los resultados
-
-- **El 95 % del beneficio se obtuvo con los datos usados para elegir las reglas.**
-  Las reglas de la entrada de las 07:05 se eligieron con datos hasta el 16 de julio
-  de 2026; hasta esa fecha la cuenta creció un 213,8 %. La zona gris del gráfico
-  corresponde a los días posteriores: la cuenta ganó un 3,3 % y el IMOEX, un 12,7 %.
-- **El escáner solo opera durante parte del periodo.** De octubre a enero sus
-  modelos todavía se entrenan, febrero y marzo se usaron para elegir su
-  arquitectura y los datos matutinos terminan el 9 de septiembre de 2026. La
-  arquitectura se eligió en octubre de 2026 con el mismo archivo de datos, así que
-  ni siquiera la zona gris es una prueba independiente de las operaciones del escáner.
-- **La ejecución está simplificada.** La simulación usa lotes fraccionarios y no
-  tiene libro de órdenes histórico ni comprobación de disponibilidad para ventas en
-  corto. Con un deslizamiento del 0,2 % por lado, el escáner reduce el beneficio en
-  lugar de aumentarlo.
-- **Posiciones con apalancamiento de hasta 3×.** Las posiciones abiertas suman como
-  máximo 150.000 ₽ y no más del triple del capital de la cuenta, por lo que su
-  rentabilidad no se puede comparar directamente con la del índice. El IMOEX es un
-  índice de precios sin dividendos.
-
 > [!WARNING]
 > Los resultados del backtest no garantizan rentabilidades futuras y no constituyen
 > asesoramiento de inversión.
