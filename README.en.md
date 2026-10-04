@@ -1,6 +1,6 @@
 # argonus-moex
 
-[![Читать на русском](docs/assets/readme-ru.svg)](README.md)
+[![Читать на русском](docs/assets/readme-ru.svg)](README.md) [![阅读简体中文版](docs/assets/readme-zh-CN.svg)](README.zh-CN.md) [![Leer en español](docs/assets/readme-es.svg)](README.es.md) [![Ler em português do Brasil](docs/assets/readme-pt-BR.svg)](README.pt-BR.md)
 
 Argonus is a Python project for analyzing stocks on the Moscow Exchange (MOEX),
 generating watchlists, researching intraday strategies, and executing orders
