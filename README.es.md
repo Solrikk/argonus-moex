@@ -1,6 +1,6 @@
 # argonus-moex
 
-[![Читать на русском](docs/assets/readme-ru.svg)](README.md) [![Read in English](docs/assets/readme-en.svg)](README.en.md) [![阅读简体中文版](docs/assets/readme-zh-CN.svg)](README.zh-CN.md) [![Ler em português do Brasil](docs/assets/readme-pt-BR.svg)](README.pt-BR.md)
+[![Читать на русском](docs/assets/readme-ru.svg)](README.md) [![Read in English](docs/assets/readme-en.svg)](README.en.md) [![阅读简体中文版](docs/assets/readme-zh-CN.svg)](README.zh-CN.md) [![Ler em português do Brasil](docs/assets/readme-pt-BR.svg)](README.pt-BR.md) [![日本語で読む](docs/assets/readme-ja.svg)](README.ja.md)
 
 Argonus es un proyecto en Python para analizar acciones de la Bolsa de Moscú
 (MOEX), generar listas de seguimiento, investigar estrategias intradía y
