@@ -2,6 +2,10 @@
 
 [![Read in English](docs/assets/readme-en.svg)](README.en.md) [![阅读简体中文版](docs/assets/readme-zh-CN.svg)](README.zh-CN.md) [![Leer en español](docs/assets/readme-es.svg)](README.es.md) [![Ler em português do Brasil](docs/assets/readme-pt-BR.svg)](README.pt-BR.md) [![日本語で読む](docs/assets/readme-ja.svg)](README.ja.md) [![한국어로 읽기](docs/assets/readme-ko.svg)](README.ko.md) [![Auf Deutsch lesen](docs/assets/readme-de.svg)](README.de.md)
 
+[![Просмотры README](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
+
+<sub>Приблизительные просмотры всех языковых версий с момента подключения счётчика. Повторные загрузки могут учитываться.</sub>
+
 Argonus — Python-проект для анализа акций Московской биржи, генерации вотчлистов,
 исследования внутридневных стратегий и исполнения заявок через T-Invest API.
 

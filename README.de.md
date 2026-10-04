@@ -2,6 +2,10 @@
 
 [![Читать на русском](docs/assets/readme-ru.svg)](README.md) [![Read in English](docs/assets/readme-en.svg)](README.en.md) [![阅读简体中文版](docs/assets/readme-zh-CN.svg)](README.zh-CN.md) [![Leer en español](docs/assets/readme-es.svg)](README.es.md) [![Ler em português do Brasil](docs/assets/readme-pt-BR.svg)](README.pt-BR.md) [![日本語で読む](docs/assets/readme-ja.svg)](README.ja.md) [![한국어로 읽기](docs/assets/readme-ko.svg)](README.ko.md)
 
+[![README-Aufrufe](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
+
+<sub>Ungefähre Aufrufe aller Sprachversionen seit Einrichtung des Zählers. Erneutes Laden kann mitgezählt werden.</sub>
+
 Argonus ist ein Python-Projekt zur Analyse von Aktien an der Moskauer Börse
 (MOEX), zur Erstellung von Watchlists, zur Erforschung von Intraday-Strategien
 und zur Ausführung von Orders über die T-Invest-API.

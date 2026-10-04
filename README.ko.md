@@ -2,6 +2,10 @@
 
 [![Читать на русском](docs/assets/readme-ru.svg)](README.md) [![Read in English](docs/assets/readme-en.svg)](README.en.md) [![阅读简体中文版](docs/assets/readme-zh-CN.svg)](README.zh-CN.md) [![Leer en español](docs/assets/readme-es.svg)](README.es.md) [![Ler em português do Brasil](docs/assets/readme-pt-BR.svg)](README.pt-BR.md) [![日本語で読む](docs/assets/readme-ja.svg)](README.ja.md) [![Auf Deutsch lesen](docs/assets/readme-de.svg)](README.de.md)
 
+[![README 조회 수](https://hits.sh/github.com/Solrikk/argonus-moex.svg?style=for-the-badge&label=README+views&color=2563eb&labelColor=1f2937)](https://hits.sh/github.com/Solrikk/argonus-moex/)
+
+<sub>카운터 추가 이후 모든 언어 버전의 대략적인 조회 수입니다. 반복 로드도 집계될 수 있습니다.</sub>
+
 Argonus는 모스크바 거래소(MOEX)의 주식 분석, 관심 종목 목록 생성,
 장중 거래 전략 연구 및 T-Invest API를 통한 주문 실행을 위한 Python 프로젝트입니다.
 
