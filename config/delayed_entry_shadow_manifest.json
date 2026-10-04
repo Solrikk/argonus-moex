@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argonus_delayed_entry_shadow_manifest",
+  "release": "delayed-entry-shadow-2026-07-20-v1",
+  "mode": "shadow_only",
+  "production_activation_allowed": false,
+  "registered_at": "2026-07-18",
+  "evidence_not_before": "2026-07-20",
+  "policy": {
+    "name": "delayed_entry_0705_depth50_vwap",
+    "capture_start": "07:05:00",
+    "capture_end": "07:05:15",
+    "book_depth": 50,
+    "max_quote_age_ms": 3000,
+    "long_side": "asks",
+    "short_side": "bids",
+    "size_basis": "actual_control_filled_lots",
+    "entry_price": "depth_weighted_vwap",
+    "frozen_absolute_target": true,
+    "stop_pct": 1.0,
+    "time_exit": "18:35",
+    "capture_bar": "exclude_capture_containing_5m_bar; start_at_next_complete_5m_bar",
+    "stress_bps": [
+      0,
+      5,
+      10
+    ]
+  },
+  "control": {
+    "source": "same_day_protected_exit_shadow_plan",
+    "entry_price": "actual_broker_fill",
+    "target": "same_frozen_absolute_target",
+    "stop_pct": 1.0,
+    "time_exit": "18:35"
+  },
+  "promotion_gates": {
+    "minimum_eligible_captures": 50,
+    "capture_window": true,
+    "quote_freshness": true,
+    "depth_coverage": true,
+    "target_ahead": true,
+    "control_fill_before_quote": true,
+    "execution_claim": false,
+    "candle_open_fallback_allowed": false,
+    "positive_delta_both_chronological_halves": true,
+    "mdd_nonworse": true,
+    "max_positive_contributor_share_pct": 35.0,
+    "paired_sign_flip_p_max": 0.1,
+    "positive_delta_required_at_stress_bps": 10
+  },
+  "audit": {
+    "plan_publication": "atomic first-writer-wins before the only market-data request",
+    "capture_publication": "atomic first-writer-wins per trade date",
+    "broker_method_allowlist": [
+      "tinkoff.public.invest.api.contract.v1.MarketDataService/GetOrderBook"
+    ],
+    "order_methods_allowed": false,
+    "bot_lock_allowed": false
+  },
+  "source_research": {
+    "status": "in_sample_07:05_open_discovery_is_diagnostic_only; promotion_requires_new_point_in_time_orderbook_evidence"
+  },
+  "warning": "Forward evidence only. This manifest cannot place, replace, cancel, or protect an order and cannot activate production.",
+  "artifacts": {
+    "delayed_entry_shadow.py": "8bcf436d57fcc5d0cb3907d877f3077ab49bac895d2b5e78bb654fd315803f0a",
+    "capture_delayed_entry_0705.py": "bcc38f0404dd4c77b6418303bca38965fb60e2f4f98552f2869af3fd72a4f474",
+    "evaluate_delayed_entry_shadow.py": "24fc547e97141242f26faeb41a13e7784d67743b939894be8ef274a183e1ff49",
+    "run_delayed_entry_shadow.sh": "9b83e998a96a3e2db227f75c72093479281b84cd534bcd42474e71ae58ba862b",
+    "forward_shadow_research.py": "b747f6987876ab449be11d52965a23344690d0cc162b9d82566e4a043498d4f7",
+    "argonus/paths.py": "9a4a79b0f74db2d0ec1fcc248b06840687b1175fd28cce56bb40a9e60c286758"
+  }
+}

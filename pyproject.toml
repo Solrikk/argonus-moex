@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argonus-moex"
+version = "0.1.0"
+description = "Argonus trading bot and intraday research"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scikit-learn"]
+
+[project.optional-dependencies]
+research = ["matplotlib"]
+
+[tool.setuptools.packages.find]
+include = ["argonus", "argonus.*"]

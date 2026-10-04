@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "policy": "directional_rs5_top3",
+  "feature": "directional_stock_return_5d_minus_index_return_5d",
+  "threshold_pp": -2.39,
+  "top_k": 3,
+  "selection_order": "existing_rank_1_to_3_first_eligible_at_or_above_threshold",
+  "fallback_policy": "read_only_full_preflight_then_original_rank1_before_any_order_mutation",
+  "required_config": {
+    "day_filter": false,
+    "regime_gates": true,
+    "short_rally_guard_pct": 8.0,
+    "minimum_target_pct": 2.0,
+    "long_risk_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "second_engine": false,
+    "confidence_sizing": false,
+    "pullback_pct": 0.0,
+    "rs5_threshold_pp": -2.39,
+    "target_position_rub": 150000.0,
+    "max_leverage": 3.0,
+    "entry_start": "07:05",
+    "entry_deadline": "07:07",
+    "entry_execution_policy": "delayed_0705_depth50_fok",
+    "entry_book_depth": 50,
+    "entry_max_quote_age_ms": 3000,
+    "entry_max_impact_bps": 10.0,
+    "entry_time_in_force": "TIME_IN_FORCE_FILL_OR_KILL"
+  },
+  "exit_activation_manifest": "config/profit_target_activation_manifest.json",
+  "release": "EXAMPLE_NOT_ACTIVATED",
+  "approved": false,
+  "production_activation_allowed": false,
+  "effective_from": "2099-01-01",
+  "runtime_artifacts": {
+    "argonus/trading/trade_bot.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "scripts/run_tick.sh": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_entry_0705.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "config/entry_0705_activation_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "data/backtests/RS5_SHADOW_RESEARCH_2026-07-18.md": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_profit_target.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "config/profit_target_activation_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "config/opening_activation_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_opening.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/paths.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/serialization.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+  },
+  "artifacts": {
+    "analyzer": {
+      "name": "watchlist_best_target.py",
+      "sha256": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+    },
+    "selector": {
+      "name": "shadow_rs5_selector.py",
+      "sha256": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+    },
+    "models": {
+      "runner_day_confidence_model.json": {
+        "name": "runner_day_confidence_model.json",
+        "sha256": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+      },
+      "same_day_top_reranker_model.json": {
+        "name": "same_day_top_reranker_model.json",
+        "sha256": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+      },
+      "same_day_top_t2plus_reranker_model.json": {
+        "name": "same_day_top_t2plus_reranker_model.json",
+        "sha256": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+      },
+      "same_day_top_winner_reranker_model.json": {
+        "name": "same_day_top_winner_reranker_model.json",
+        "sha256": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+      }
+    }
+  }
+}

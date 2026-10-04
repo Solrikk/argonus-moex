@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "policy": "delayed_0705_depth50_fok",
+  "execution_contract": {
+    "entry_window_msk": [
+      "07:05",
+      "07:07"
+    ],
+    "orderbook_depth": 50,
+    "max_quote_age_ms": 3000,
+    "max_vwap_impact_bps": 10.0,
+    "long_side": "asks",
+    "short_side": "bids",
+    "limit_price": "worst_consumed_depth_level",
+    "time_in_force": "TIME_IN_FORCE_FILL_OR_KILL",
+    "frozen_absolute_target": "Engine A original T4 for entry guards; target125 exit separately activated",
+    "stop_pct_from_actual_fill": 1.0,
+    "time_exit": "18:35",
+    "legacy_or_late_fallback_allowed": false,
+    "exit_activation_manifest": "config/profit_target_activation_manifest.json"
+  },
+  "required_config": {
+    "entry_start": "07:05",
+    "entry_deadline": "07:07",
+    "entry_execution_policy": "delayed_0705_depth50_fok",
+    "entry_book_depth": 50,
+    "entry_max_quote_age_ms": 3000,
+    "entry_max_impact_bps": 10.0,
+    "entry_time_in_force": "TIME_IN_FORCE_FILL_OR_KILL",
+    "target_position_rub": 150000.0,
+    "max_leverage": 3.0,
+    "stop_loss_pct": 1.0,
+    "exit_time": "18:35"
+  },
+  "release": "EXAMPLE_NOT_ACTIVATED",
+  "approved": false,
+  "production_activation_allowed": false,
+  "effective_from": "2099-01-01",
+  "runtime_artifacts": {
+    "argonus/trading/trade_bot.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "scripts/run_tick.sh": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_entry_0705.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "data/backtests/ENTRY_TIMING_RESEARCH_2026-07-18.md": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_profit_target.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "config/profit_target_activation_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "config/opening_activation_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_opening.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/paths.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/serialization.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+  }
+}

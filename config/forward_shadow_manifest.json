@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argonus_forward_shadow_research_manifest",
+  "release": "forward-shadow-2026-07-20-v1",
+  "mode": "shadow_only",
+  "production_activation_allowed": false,
+  "registered_at": "2026-07-18",
+  "evidence_not_before": "2026-07-20",
+  "policies": {
+    "exit": {
+      "name": "sl1.25_t1.25_x1700",
+      "stop_pct": 1.25,
+      "target_multiple": 1.25,
+      "time_exit": "17:00"
+    },
+    "selector": {
+      "name": "max_vol_expansion_top6",
+      "feature": "vol_expansion",
+      "top_k": 6,
+      "directional_rs5_floor_pp": -2.39,
+      "order": "maximum_finite_feature_then_existing_rank",
+      "preserve_baseline_day_set": true
+    }
+  },
+  "control": {
+    "selector": "actual Engine-A+RS5 selected symbol, never legacy rank1 unless they are identical",
+    "exit": {
+      "stop_pct": 1.0,
+      "target_multiple": 1.0,
+      "time_exit": "18:35"
+    }
+  },
+  "promotion_gates": {
+    "exit_min_new_trades": 50,
+    "selector_min_eligible_sessions": 40,
+    "selector_min_divergences": 10,
+    "positive_delta_both_chronological_halves": true,
+    "mdd_nonworse": true,
+    "max_positive_contributor_share_pct": 35.0,
+    "paired_sign_flip_p_max": 0.1,
+    "paired_sign_flip_samples": 100000,
+    "paired_sign_flip_seed": 20260718
+  },
+  "audit": {
+    "identity": "sha256 canonical JSON; UUID and wall-clock timestamps excluded",
+    "publication": "atomic first-writer-wins per policy/record_type/trade_date",
+    "capture_mode": "forward",
+    "optional_execution_evidence": "collect only after protected live entry or in standalone command"
+  },
+  "source_research": {
+    "data/backtests/FLAT_MONTH_EXIT_RISK_RESEARCH_2026-07-18.md": "5f3a5ce1b1c03d0afdf9dd3c9b082f4985d61be28aed14bcf5104beb1f2d4bea",
+    "data/backtests/FLAT_MONTH_SELECTOR_WALKFORWARD_2026-07-18.md": "ec97b795fb08546afbe15e17d2fcc6948be3c5211f6518c2afbb7d0791487304"
+  },
+  "warning": "Pre-registered data collection only. This manifest cannot authorize a live selector, exit, broker preflight, order, or position change.",
+  "artifacts": {
+    "forward_shadow_research.py": "b747f6987876ab449be11d52965a23344690d0cc162b9d82566e4a043498d4f7",
+    "evaluate_forward_shadows.py": "04fc97b6376cf0a2c1c5462ae16a8bf8879d8fc8e6cad52659674edd90ca5335",
+    "argonus/paths.py": "9a4a79b0f74db2d0ec1fcc248b06840687b1175fd28cce56bb40a9e60c286758"
+  }
+}

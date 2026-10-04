@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "policy": "target125",
+  "execution_contract": {
+    "scope": "new Engine-A entries only; existing journal entries retain their frozen policy",
+    "original_t4": "unrounded analyzer T4 frozen before entry submission",
+    "target_formula": "actual_average_fill + 1.25 * (original_T4 - actual_average_fill)",
+    "target_tick_rounding": "toward_entry: floor for long, ceiling for short",
+    "entry_guards": "unchanged original T4 eligibility and execution-price guards",
+    "stop_pct_from_actual_fill": 1.0,
+    "time_exit_msk": "18:35",
+    "protection_order": [
+      "persist_actual_fill",
+      "STOP_LOSS",
+      "TAKE_PROFIT"
+    ],
+    "target_calculation_failure": "persist failure, place STOP_LOSS, request exit on next tick",
+    "unregistered_old_forward_shadow_comparisons": "suppressed; original manifest and evidence remain immutable"
+  },
+  "required_config": {
+    "entry_start": "07:05",
+    "entry_deadline": "07:07",
+    "entry_execution_policy": "delayed_0705_depth50_fok",
+    "entry_book_depth": 50,
+    "entry_max_quote_age_ms": 3000,
+    "entry_max_impact_bps": 10.0,
+    "entry_time_in_force": "TIME_IN_FORCE_FILL_OR_KILL",
+    "target_position_rub": 150000.0,
+    "max_leverage": 3.0,
+    "stop_loss_pct": 1.0,
+    "exit_time": "18:35",
+    "target_distance_multiplier": 1.25,
+    "day_filter": false,
+    "regime_gates": true,
+    "short_rally_guard_pct": 8.0,
+    "minimum_target_pct": 2.0,
+    "long_risk_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "second_engine": false,
+    "confidence_sizing": false,
+    "pullback_pct": 0.0,
+    "rs5_selector": true,
+    "rs5_threshold_pp": -2.39
+  },
+  "release": "EXAMPLE_NOT_ACTIVATED",
+  "approved": false,
+  "production_activation_allowed": false,
+  "effective_from": "2099-01-01",
+  "runtime_artifacts": {
+    "data/backtests/profit_first_2026-10-03/report.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "data/backtests/profit_first_2026-10-03/selected_candidate.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "data/backtests/profit_first_2026-10-03/study_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_profit_target.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "scripts/run_tick.sh": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/trade_bot.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "config/opening_activation_manifest.json": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/trading/production_opening.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/paths.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE",
+    "argonus/serialization.py": "REPLACE_WITH_SHA256_OF_YOUR_FILE"
+  }
+}
